@@ -31,8 +31,8 @@ public void withdraw(Account account,  Scanner scanner){
         System.out.println("Current balance : " + account.getBalance());
         System.out.println();
         System.out.print("Enter the amount to be Withdrawn : ");
-        int balance = scanner.nextInt();
-     // account.getBalance() = account.getBalance() - balance;
+        double balance = scanner.nextDouble();
+        account.setBalance(account.getBalance() - balance);
 
         System.out.println("R " + balance+ " has been withdrawn from your Account");
         System.out.println("Your current balance is : " + account.getBalance());

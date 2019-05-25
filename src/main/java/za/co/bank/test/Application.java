@@ -13,6 +13,10 @@ Scanner scanner = new Scanner(System.in);
 Account account = new Account();
 //Person person = new Customer();
 Customer customer = new Customer();
+Bank bank = new Bank();
+Employee person = new Employee();
+
+bank.registerEmployee(person, scanner);
 
 for(int a=0; a<5; a++){
 System.out.println();

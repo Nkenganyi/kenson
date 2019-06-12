@@ -11,12 +11,11 @@ public static void main(String [] args){
 
 Scanner scanner = new Scanner(System.in);
 Account account = new Account();
-//Person person = new Customer();
 Customer customer = new Customer();
 Bank bank = new Bank();
-Employee person = new Employee();
+Employee employee = new Employee();
 
-bank.registerEmployee(person, scanner);
+//bank.registerEmployee(employee, scanner);
 
 for(int a=0; a<5; a++){
 System.out.println();
@@ -31,12 +30,12 @@ int option = scanner.nextInt();
 
 if(option == 1){
 
-account.createAccount(customer, scanner);
+employee.createAccount(customer, scanner, account);
 
 }
 else if(option == 2){
 
-        customer.deposit(account, scanner);
+        customer.deposit(account, scanner, employee);
         System.out.println();
 }
 else if(option == 3){
